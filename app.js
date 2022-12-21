@@ -41,8 +41,9 @@ const { MulterError } = require("multer");
 CreateAllFolder();
 
 // Database Connection
+MONGO_URI = "mongodb+srv://AhmedHassan:Knight007@cluster0.ofzz68w.mongodb.net/TestDB?retryWrites=true&w=majority"
 mongoose
-  .connect("mongodb+srv://AhmedHassan:Knight007@cluster0.ofzz68w.mongodb.net/TestDB?retryWrites=true&w=majority", {
+  .connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
     useCreateIndex: true,
